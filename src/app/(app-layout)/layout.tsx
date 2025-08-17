@@ -1,7 +1,13 @@
+import ThemeSwitcher from '@/components/ui/themeSwitcher';
 import React from 'react';
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
-  return <div>{children}</div>;
+  return (
+    <div>
+      <ThemeSwitcher />
+      {children}
+    </div>
+  );
 };
 
 export default AppLayout;
