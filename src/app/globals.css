@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+<<<<<<< Updated upstream
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
 
@@ -203,14 +204,20 @@
   --sidebar-border: oklch(1 0 0 / 10%);
 
   --sidebar-ring: oklch(0.556 0 0);
+=======
+:root {
+  --primary: oklch(0.645 0.246 16.439);
+}
+
+.dark {
+  --primary: oklch(0.488 0.243 264.376);
+>>>>>>> Stashed changes
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
+  p {
+    font-size: large;
+    color: var(--primary);
   }
   .typography-heading {
     @apply text-2xl font-bold tracking-tight text-foreground;
