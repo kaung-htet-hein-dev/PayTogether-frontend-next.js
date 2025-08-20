@@ -3,8 +3,9 @@ import { useTheme } from 'next-themes';
 import React, { useEffect } from 'react';
 import { Button } from './button';
 import { Moon, Sun } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
-const ThemeSwitcher = () => {
+const ThemeSwitcher = ({ className }: { className?: string }) => {
   const [mounted, setMounted] = React.useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -17,7 +18,7 @@ const ThemeSwitcher = () => {
   return (
     <Button
       variant={'ghost'}
-      className="rounded-full"
+      className={cn('rounded-full', className)}
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       size={'sm'}
     >

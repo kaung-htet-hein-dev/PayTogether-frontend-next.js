@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Users, ArrowRight, Plus } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Button } from '@/components/atoms/button';
+import { Card } from '@/components/atoms/card';
 
 interface Group {
   id: string;

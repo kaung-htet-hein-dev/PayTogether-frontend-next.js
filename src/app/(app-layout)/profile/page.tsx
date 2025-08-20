@@ -12,21 +12,21 @@ import {
   Mail,
   Phone,
 } from 'lucide-react';
-import { Card } from '@/components/ui/card';
+import { Card } from '@/components/atoms/card';
 import { Avatar } from '@radix-ui/react-avatar';
-import { AvatarFallback } from '@/components/ui/avatar';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
+import { AvatarFallback } from '@/components/atoms/avatar';
+import { Label } from '@/components/atoms/label';
+import { Input } from '@/components/atoms/input';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
-import { Button } from '@/components/ui/button';
-import { Switch } from '@/components/ui/switch';
-import { Separator } from '@/components/ui/separator';
+} from '@/components/atoms/select';
+import { Button } from '@/components/atoms/button';
+import { Switch } from '@/components/atoms/switch';
+import { Separator } from '@/components/atoms/separator';
 
 interface ProfileProps {
   onLogout: () => void;

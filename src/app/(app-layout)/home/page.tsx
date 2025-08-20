@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { Users, DollarSign, TrendingUp, Clock, ArrowRight, Plus } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Card } from '@/components/atoms/card';
+import { Button } from '@/components/atoms/button';
 
 interface Group {
   id: string;

@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { DollarSign, Users, ArrowUpRight, ArrowDownRight } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Card } from '@/components/atoms/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/atoms/tabs';
 
 interface Group {
   id: string;
